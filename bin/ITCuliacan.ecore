@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="itculiacan" nsURI="http://itculiacan/1.0" nsPrefix="itculiacan">
   <eClassifiers xsi:type="ecore:EClass" name="Alumno">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numeroControl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numeroControl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="generacion" lowerBound="1"
         eType="#//Generacion" eOpposite="#//Generacion/alumnos"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cursa" lowerBound="1" eType="#//PlanEstudio"
@@ -43,23 +43,26 @@
         upperBound="-1" eType="#//PlanEstudio" eOpposite="#//PlanEstudio/materias"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Profesor">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clave"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numeroMaterias"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clave" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numeroMaterias" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="grupos" lowerBound="1"
         upperBound="-1" eType="#//Grupo" eOpposite="#//Grupo/profesor"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombramiento" eType="#//Nombramiento"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="Nombramiento"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="Nombramiento">
+    <eLiterals name="medioTiempo" value="10"/>
+    <eLiterals name="tiempoCompleto" value="20" literal="tiempoCompleto"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PlanEstudio">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clave"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clave" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="alumnos" lowerBound="1"
         upperBound="-1" eType="#//Alumno" eOpposite="#//Alumno/cursa"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="materias" lowerBound="1"
         upperBound="-1" eType="#//Materia" eOpposite="#//Materia/planesEstudio"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Date"/>
   <eClassifiers xsi:type="ecore:EClass" name="Universidad">
     <eStructuralFeatures xsi:type="ecore:EReference" name="refProfesor" lowerBound="1"
         upperBound="-1" eType="#//Profesor" containment="true"/>

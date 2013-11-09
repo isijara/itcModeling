@@ -151,6 +151,14 @@
   <children xmi:type="notation:Node" xmi:id="_icYeMEjAEeOQF9huwCapFA" type="1005">
     <children xmi:type="notation:Node" xmi:id="_icZFQEjAEeOQF9huwCapFA" type="4010"/>
     <children xmi:type="notation:Node" xmi:id="_icaTYEjAEeOQF9huwCapFA" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_79kl8ElvEeOwVqCCcXLHiw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="ITCuliacan.ecore#//Nombramiento/medioTiempo"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_79kl8UlvEeOwVqCCcXLHiw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_EdCsoElwEeOwVqCCcXLHiw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="ITCuliacan.ecore#//Nombramiento/tiempoCompleto"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_EdCsoUlwEeOwVqCCcXLHiw"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_icaTYUjAEeOQF9huwCapFA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_icaTYkjAEeOQF9huwCapFA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_icaTY0jAEeOQF9huwCapFA"/>
@@ -183,22 +191,6 @@
     <element xmi:type="ecore:EClass" href="ITCuliacan.ecore#//PlanEstudio"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_riGskkjAEeOQF9huwCapFA" x="884" y="64"/>
   </children>
-  <children xmi:type="notation:Node" xmi:id="_R8eBcEkIEeOsyNJb_elX2Q" type="1001">
-    <children xmi:type="notation:Node" xmi:id="_R8eogEkIEeOsyNJb_elX2Q" type="4001"/>
-    <children xmi:type="notation:Node" xmi:id="_R8eogUkIEeOsyNJb_elX2Q" type="5001">
-      <styles xmi:type="notation:DrawerStyle" xmi:id="_R8eogkkIEeOsyNJb_elX2Q"/>
-      <styles xmi:type="notation:SortingStyle" xmi:id="_R8eog0kIEeOsyNJb_elX2Q"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_R8eohEkIEeOsyNJb_elX2Q"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_R8fPkEkIEeOsyNJb_elX2Q" type="5002">
-      <styles xmi:type="notation:DrawerStyle" xmi:id="_R8fPkUkIEeOsyNJb_elX2Q"/>
-      <styles xmi:type="notation:SortingStyle" xmi:id="_R8fPkkkIEeOsyNJb_elX2Q"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_R8fPk0kIEeOsyNJb_elX2Q"/>
-    </children>
-    <styles xmi:type="notation:ShapeStyle" xmi:id="_R8eBcUkIEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="ITCuliacan.ecore#//Date"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R8eBckkIEeOsyNJb_elX2Q" x="76" y="436"/>
-  </children>
   <children xmi:type="notation:Node" xmi:id="_djNn0EkYEeOsyNJb_elX2Q" type="1001">
     <children xmi:type="notation:Node" xmi:id="_djOO4EkYEeOsyNJb_elX2Q" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_djO18EkYEeOsyNJb_elX2Q" type="5001">
@@ -213,7 +205,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_djNn0UkYEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="ITCuliacan.ecore#//Universidad"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_djNn0kkYEeOsyNJb_elX2Q" x="344" y="513" width="219"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_djNn0kkYEeOsyNJb_elX2Q" x="340" y="468" width="219"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_DLkYkEi-EeOQF9huwCapFA"/>
   <element xmi:type="ecore:EPackage" href="ITCuliacan.ecore#/"/>
@@ -461,7 +453,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_F4214UkZEeOsyNJb_elX2Q" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_F4214kkZEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="ITCuliacan.ecore#//Universidad/refAlumno"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F42140kZEeOsyNJb_elX2Q" points="[-1, 22, 336, 445]$[-441, 22, -104, 445]$[-441, -438, -104, -15]$[-353, -438, -16, -15]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F42140kZEeOsyNJb_elX2Q" points="[-4, 15, 260, 393]$[-392, 15, -128, 393]$[-392, -408, -128, -30]$[-280, -408, -16, -30]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F455MEkZEeOsyNJb_elX2Q" id="(0.0196078431372549,0.23809523809523808)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F455MUkZEeOsyNJb_elX2Q" id="(0.11409395973154363,0.7538461538461538)"/>
   </edges>
@@ -475,7 +467,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_Ox56MUkZEeOsyNJb_elX2Q" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_Ox56MkkZEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="ITCuliacan.ecore#//Universidad/refGeneracion"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ox56M0kZEeOsyNJb_elX2Q" points="[-12, 0, 268, 217]$[-352, 0, -72, 217]$[-352, -212, -72, 5]$[-280, -212, 0, 5]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ox56M0kZEeOsyNJb_elX2Q" points="[-12, 1, 264, 173]$[-350, 1, -74, 173]$[-350, -182, -74, -10]$[-276, -182, 0, -10]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ox7vYEkZEeOsyNJb_elX2Q" id="(0.058823529411764705,0.19047619047619047)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ox7vYUkZEeOsyNJb_elX2Q" id="(0.008264462809917356,0.5076923076923077)"/>
   </edges>
