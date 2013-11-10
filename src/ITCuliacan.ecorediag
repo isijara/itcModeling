@@ -441,7 +441,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_8fGRMUkYEeOsyNJb_elX2Q" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_8fGRMkkYEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="ITCuliacan.ecore#//Universidad/refPlanEstudio"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8fGRM0kYEeOsyNJb_elX2Q" points="[50, 11, -418, 449]$[474, 11, 6, 449]$[474, -406, 6, 32]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8fGRM0kYEeOsyNJb_elX2Q" points="[109, 8, -382, 401]$[486, 8, -5, 401]$[486, -361, -5, 32]"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_F4214EkZEeOsyNJb_elX2Q" type="3002" source="_djNn0EkYEeOsyNJb_elX2Q" target="_LGmVcEi-EeOQF9huwCapFA">
     <children xmi:type="notation:Node" xmi:id="_F44EAEkZEeOsyNJb_elX2Q" type="4011">
@@ -453,7 +453,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_F4214UkZEeOsyNJb_elX2Q" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_F4214kkZEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="ITCuliacan.ecore#//Universidad/refAlumno"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F42140kZEeOsyNJb_elX2Q" points="[-4, 15, 260, 393]$[-392, 15, -128, 393]$[-392, -408, -128, -30]$[-280, -408, -16, -30]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F42140kZEeOsyNJb_elX2Q" points="[-4, 19, 262, 397]$[-393, 19, -127, 397]$[-393, -408, -127, -30]$[-280, -408, -14, -30]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F455MEkZEeOsyNJb_elX2Q" id="(0.0196078431372549,0.23809523809523808)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F455MUkZEeOsyNJb_elX2Q" id="(0.11409395973154363,0.7538461538461538)"/>
   </edges>
@@ -467,7 +467,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_Ox56MUkZEeOsyNJb_elX2Q" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_Ox56MkkZEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="ITCuliacan.ecore#//Universidad/refGeneracion"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ox56M0kZEeOsyNJb_elX2Q" points="[-12, 1, 264, 173]$[-350, 1, -74, 173]$[-350, -182, -74, -10]$[-276, -182, 0, -10]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ox56M0kZEeOsyNJb_elX2Q" points="[-12, 9, 264, 181]$[-350, 9, -74, 181]$[-350, -182, -74, -10]$[-276, -182, 0, -10]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ox7vYEkZEeOsyNJb_elX2Q" id="(0.058823529411764705,0.19047619047619047)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ox7vYUkZEeOsyNJb_elX2Q" id="(0.008264462809917356,0.5076923076923077)"/>
   </edges>
@@ -481,7 +481,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_bVv1QUkZEeOsyNJb_elX2Q" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_bVv1QkkZEeOsyNJb_elX2Q" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="ITCuliacan.ecore#//Universidad/refMateria"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bVv1Q0kZEeOsyNJb_elX2Q" points="[58, 0, -140, 409]$[197, 0, -1, 409]$[197, -393, -1, 16]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bVv1Q0kZEeOsyNJb_elX2Q" points="[58, 9, -144, 373]$[199, 9, -3, 373]$[199, -348, -3, 16]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bVxqcEkZEeOsyNJb_elX2Q" id="(0.7352941176470589,0.19047619047619047)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bVxqcUkZEeOsyNJb_elX2Q" id="(0.8761061946902655,0.7538461538461538)"/>
   </edges>

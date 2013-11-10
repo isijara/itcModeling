@@ -52,8 +52,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombramiento" eType="#//Nombramiento"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Nombramiento">
-    <eLiterals name="medioTiempo" value="10"/>
-    <eLiterals name="tiempoCompleto" value="20" literal="tiempoCompleto"/>
+    <eLiterals name="medioTiempo" value="1" literal="1"/>
+    <eLiterals name="tiempoCompleto" value="2" literal="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PlanEstudio">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="clave" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
