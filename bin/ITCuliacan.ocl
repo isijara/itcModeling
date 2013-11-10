@@ -68,29 +68,30 @@ context Grupo
 		self.alumnos->size() <= 40
 
 -- 3).- El número de estudiantes en un grupo no debe ser superior  a la capacidad del aula.
+
 	inv grupoMenorACapacidadAula:
 		alumnos->asSet()->size() <= aula.capacidad 
-	/**
-	 * context Profesor::numeroMaterias : Integer
-	 * derive:
-	 * if nombramiento = Nombramiento::medioTiempo
-	 * then Nombramiento::medioTiempo
-	 * else
-	 * Nombramiento::tiempoCompleto
-	 * endif
-	 * /**
-	 * * if nombramiento = Nombramiento::medioTiempo
-	 * * then numeroMaterias = 1
-	 * * else
-	 * * numeroMaterias = 1
-	 * * endif
+	
+context Profesor::numeroMaterias : Integer 
+	derive:
+		if nombramiento = Nombramiento::medioTiempo
+			then 10
+	  	else
+	  		20
+		endif
+  	/**
+	if nombramiento = Nombramiento::medioTiempo
+		then numeroMaterias = 1
+	else
+		numeroMaterias = 1
+	endif
 	 */
 	
-	/**
-	 * context Profesor
-	 * inv materiasMaximasProfesor:
-	 * grupos->asSet()->size() <= numeroMaterias
-	 */
+	
+context Profesor
+	inv materiasMaximasProfesor:
+		grupos->asSet()->size() <= numeroMaterias
+	 
 
 	
 -- 	4).-Se desea conocer el número de estudiantes inscritos en 1 materia
