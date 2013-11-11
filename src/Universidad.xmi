@@ -8,27 +8,27 @@
   <refProfesor
       clave="1"
       nombre="Juanito Banana"
-      grupos="//@refGrupo.0 //@refGrupo.2 //@refGrupo.1"/>
+      grupos="//@refGrupo.0 //@refGrupo.2 //@refGrupo.1 //@refGrupo.3"/>
   <refAulas
       clave="1"
       capacidad="40"
-      grupos="//@refGrupo.0 //@refGrupo.2 //@refGrupo.1"/>
+      grupos="//@refGrupo.0 //@refGrupo.2 //@refGrupo.1 //@refGrupo.3"/>
   <refPlanEstudio
       clave="5"
       nombre="Sistemas"
       alumnos="//@refAlumno.0 //@refAlumno.2 //@refAlumno.3 //@refAlumno.1"
-      materias="//@refMateria.0 //@refMateria.1"/>
+      materias="//@refMateria.0 //@refMateria.2"/>
   <refPlanEstudio
       clave="2"
       nombre="Industrial"
-      alumnos="//@refAlumno.4"
-      materias="//@refMateria.0 //@refMateria.1"/>
+      alumnos="//@refAlumno.4 //@refAlumno.5"
+      materias="//@refMateria.0 //@refMateria.2 //@refMateria.1"/>
   <refAlumno
       nombre="Ram&#xf3;n Alberto Isijara Medina"
       numeroControl="12"
       generacion="//@refGeneracion.0"
       cursa="//@refPlanEstudio.0"
-      grupos="//@refGrupo.0 //@refGrupo.2"/>
+      grupos="//@refGrupo.0 //@refGrupo.2 //@refGrupo.3"/>
   <refAlumno
       nombre="Pedro Picapiedra"
       numeroControl="1234567"
@@ -53,36 +53,57 @@
       generacion="//@refGeneracion.0"
       cursa="//@refPlanEstudio.1"
       grupos="//@refGrupo.0"/>
+  <refAlumno
+      nombre="Carmen Aristegui"
+      numeroControl="121212"
+      generacion="//@refGeneracion.1"
+      cursa="//@refPlanEstudio.1"
+      grupos="//@refGrupo.1"/>
   <refGeneracion
       fechaInicio="2011-12-01T00:00:00.000-0700"
       fechaFin="2007-01-01T00:00:00.000-0700"
       alumnos="//@refAlumno.0 //@refAlumno.2 //@refAlumno.3 //@refAlumno.1 //@refAlumno.4"/>
+  <refGeneracion
+      fechaInicio="2012-12-29T23:00:00.000-0700"
+      fechaFin="2007-08-01T00:00:00.000-0600"
+      alumnos="//@refAlumno.5"/>
   <refMateria
       clave="1"
       nombre="Fundamentos de programaci&#xf3;n"
-      grupos="//@refGrupo.2"
+      grupos="//@refGrupo.2 //@refGrupo.0"
       planesEstudio="//@refPlanEstudio.0 //@refPlanEstudio.1"/>
+  <refMateria
+      clave="99"
+      nombre="Solo Industrial"
+      grupos="//@refGrupo.3"
+      planesEstudio="//@refPlanEstudio.1"/>
   <refMateria
       clave="12"
       nombre="Fundamentos de base de datos"
-      grupos="//@refGrupo.0 //@refGrupo.1"
+      grupos="//@refGrupo.1"
       planesEstudio="//@refPlanEstudio.0 //@refPlanEstudio.1"/>
   <refGrupo
       clave="1"
       aula="//@refAulas.0"
-      materia="//@refMateria.1"
+      materia="//@refMateria.0"
       profesor="//@refProfesor.0"
       alumnos="//@refAlumno.0 //@refAlumno.2 //@refAlumno.3 //@refAlumno.1 //@refAlumno.4"/>
   <refGrupo
       clave="3"
       aula="//@refAulas.0"
-      materia="//@refMateria.1"
+      materia="//@refMateria.2"
       profesor="//@refProfesor.0"
-      alumnos="//@refAlumno.1"/>
+      alumnos="//@refAlumno.1 //@refAlumno.5"/>
   <refGrupo
       clave="12"
       aula="//@refAulas.0"
       materia="//@refMateria.0"
       profesor="//@refProfesor.0"
       alumnos="//@refAlumno.0 //@refAlumno.2 //@refAlumno.3"/>
+  <refGrupo
+      clave="213213"
+      aula="//@refAulas.0"
+      materia="//@refMateria.1"
+      profesor="//@refProfesor.0"
+      alumnos="//@refAlumno.0"/>
 </itculiacan:Universidad>

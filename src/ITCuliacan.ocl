@@ -1,33 +1,12 @@
 import 'ITCuliacan.ecore'
 
 package itculiacan 
-	/**
-	 * context Profesor::numeroMaterias : Integer
-	 * derive:
-	 * if nombramiento = Nombramiento::medioTiempo
-	 * then Nombramiento::medioTiempo
-	 * else
-	 * Nombramiento::tiempoCompleto
-	 * endif
-	 * /**
-	 * * if nombramiento = Nombramiento::medioTiempo
-	 * * then numeroMaterias = 1
-	 * * else
-	 * * numeroMaterias = 1
-	 * * endif
-	 */
 	
-	/**
-	 * context Profesor
-	 * inv materiasMaximasProfesor:
-	 * grupos->asSet()->size() <= numeroMaterias
-	 */
-
+-- 1) Validación de las claves
 
 context Alumno
-inv numeroControl: numeroControl >= 0
+inv numeroControl: numeroControl > 0
 
--- Validación de las claves
 context Grupo
 	inv clave: 
 		clave > 0
@@ -41,23 +20,8 @@ inv clave: clave > 0
 context Aula
 	inv clave: 
 		clave > 0 
-	/**
-	 * if nombramiento = Nombramiento::medioTiempo
-	 * then numeroMaterias = 1
-	 * else
-	 * numeroMaterias = 1
-	 * endif
-	 */
- 
-	/**
-	 * if nombramiento = Nombramiento::medioTiempo
-	 * then numeroMaterias = 1
-	 * else
-	 * numeroMaterias = 1
-	 * endif
-	 */
-
-
+	
+	
 context Profesor
 inv clave : clave > 0
 
@@ -71,27 +35,6 @@ context Grupo
 
 	inv grupoMenorACapacidadAula:
 		alumnos->asSet()->size() <= aula.capacidad 
-	
-context Profesor::numeroMaterias : Integer 
-	derive:
-		if nombramiento = Nombramiento::medioTiempo
-			then 10
-	  	else
-	  		20
-		endif
-  	/**
-	if nombramiento = Nombramiento::medioTiempo
-		then numeroMaterias = 1
-	else
-		numeroMaterias = 1
-	endif
-	 */
-	
-	
-context Profesor
-	inv materiasMaximasProfesor:
-		grupos->asSet()->size() <= numeroMaterias
-	 
 
 	
 -- 	4).-Se desea conocer el número de estudiantes inscritos en 1 materia
@@ -103,37 +46,31 @@ context Profesor
 --	5).-Se desea conocer el número de materias que imparte 1 profesor.
 	--  refProfesor->select(clave=1).grupos.materia->asSet()->size()
 
---	6).- Un profesor no puede impartir más materias que las que le permite su nombramiento.
- 
-/**
-context Profesor::numeroMaterias : Integer
-	derive: 
-		if nombramiento = Nombramiento::medioTiempo 
-			then Nombramiento::medioTiempo
-		else 
-			Nombramiento::tiempoCompleto
-		endif 
-	/**
-	 * if nombramiento = Nombramiento::medioTiempo
-	 * then numeroMaterias = 1
-	 * else
-	 * numeroMaterias = 1
-	 * endif
-	 */
 
-			
-		/**
+--	6).- Un profesor no puede impartir más materias que las que le permite su nombramiento.
+
+context Profesor::numeroMaterias : Integer 
+	derive:
+		if nombramiento = Nombramiento::medioTiempo
+			then 10
+	  	else
+	  		20
+		endif 
+	
+ 
+
 context Profesor
 	inv materiasMaximasProfesor:
-		 grupos->asSet()->size() <= numeroMaterias
-		*/
+		grupos->asSet()->size() <= numeroMaterias 
+
+
 		
 -- 7).- Las materias que cursa un alumno deben corresponder con las que están definidas en su plan de estudios.
 context Alumno
 	inv materiasDePlanEstudio:
-		-- cursa->includesAll( grupos.materia.planesEstudio->asSet() )
-		--grupos.materia.planesEstudio->asSet()
-		grupos.materia.planesEstudio->asSet()->includes(cursa)
+		grupos.materia->forAll(m | self.cursa.materias->includes(m))
+		
+		
 		
 		
 		
