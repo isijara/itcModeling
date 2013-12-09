@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/itcModeling/src" modelPluginID="itcModeling" modelName="ITCuliacan"
+    rootExtendsInterface="org.eclipse.emf.cdo.CDOObject" rootExtendsClass="org.eclipse.emf.internal.cdo.CDOObjectImpl"
+    reflectiveDelegation="true" importerID="org.eclipse.emf.importer.cdo" featureDelegation="Reflective"
+    complianceLevel="6.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>ITCuliacan.ecore</foreignModel>
+  <modelPluginVariables>CDO=org.eclipse.emf.cdo</modelPluginVariables>
+  <genPackages prefix="Itculiacan" disposableProviderFactory="true" ecorePackage="ITCuliacan.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ITCuliacan.ecore#//Nombramiento">
+      <genEnumLiterals ecoreEnumLiteral="ITCuliacan.ecore#//Nombramiento/medioTiempo"/>
+      <genEnumLiterals ecoreEnumLiteral="ITCuliacan.ecore#//Nombramiento/tiempoCompleto"/>
+    </genEnums>
+    <genClasses ecoreClass="ITCuliacan.ecore#//Alumno">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Alumno/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Alumno/numeroControl"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Alumno/generacion"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Alumno/cursa"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Alumno/grupos"/>
+    </genClasses>
+    <genClasses ecoreClass="ITCuliacan.ecore#//Generacion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Generacion/fechaInicio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Generacion/fechaFin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Generacion/alumnos"/>
+    </genClasses>
+    <genClasses ecoreClass="ITCuliacan.ecore#//Grupo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Grupo/clave"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Grupo/aula"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Grupo/materia"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Grupo/profesor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Grupo/alumnos"/>
+    </genClasses>
+    <genClasses ecoreClass="ITCuliacan.ecore#//Aula">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Aula/clave"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Aula/capacidad"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Aula/grupos"/>
+    </genClasses>
+    <genClasses ecoreClass="ITCuliacan.ecore#//Materia">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Materia/clave"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Materia/nombre"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Materia/grupos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Materia/planesEstudio"/>
+    </genClasses>
+    <genClasses ecoreClass="ITCuliacan.ecore#//Profesor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Profesor/clave"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Profesor/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Profesor/numeroMaterias"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Profesor/grupos"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//Profesor/nombramiento"/>
+    </genClasses>
+    <genClasses ecoreClass="ITCuliacan.ecore#//PlanEstudio">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//PlanEstudio/clave"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ITCuliacan.ecore#//PlanEstudio/nombre"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//PlanEstudio/alumnos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//PlanEstudio/materias"/>
+    </genClasses>
+    <genClasses ecoreClass="ITCuliacan.ecore#//Universidad">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Universidad/refProfesor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Universidad/refAulas"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Universidad/refPlanEstudio"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Universidad/refAlumno"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Universidad/refGeneracion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Universidad/refMateria"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ITCuliacan.ecore#//Universidad/refGrupo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
